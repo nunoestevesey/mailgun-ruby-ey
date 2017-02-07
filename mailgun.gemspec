@@ -5,7 +5,7 @@ require 'mailgun/version'
 
 Gem::Specification.new do |spec|
 
-  spec.name             = 'mailgun-ruby'
+  spec.name             = 'mailgun-ruby-ey'
   spec.version          = Mailgun::VERSION
   spec.homepage         = 'http://www.mailgun.com'
   spec.platform         = Gem::Platform::RUBY
