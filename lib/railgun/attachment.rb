@@ -1,3 +1,5 @@
+require 'base64'
+
 module Railgun
 
   class Attachment < StringIO
@@ -14,7 +16,7 @@ module Railgun
 
       @content_type = attachment.content_type.split(';')[0]
 
-      super attachment.body.decoded
+      super Base64.decode64 attachment.body.encoded
     end
 
   end
